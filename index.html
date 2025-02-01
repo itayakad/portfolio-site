@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee53e1c59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="images/logo3.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Itay Akad</span></h1>
+            <p>Undergraduate Student at<br>Rutgers - New Brunswick</p>
+        </div>
+    </div>
+</div>
+<!------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about_image.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title-about">About Me</h1><p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('overview')">Overview</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="overview">
+                    <ul>
+                        <li><span>Summary</span><br>I am a motivated and detail-oriented Computer Science and Data Science student with a strong foundation in programming, backend development, and data analytics. Through my studies and experiences, I hve gained experience in Python, Java, SQL, and Django, with hands-on contributions to real-world projects involving automation, database optimization, and full-stack development. I am currently seeking an internship opportunity to apply technical expertise in software engineering, data science, or machine learning to impactful projects.<br></li>
+                        <li><span>My Life</span><br>
+                            My journey began when I was four years old when my parents made the bold decision to leave Israel for America. Though young, this transition profoundly shaped my worldview and aspirations. I grew up witnessing their unwavering determination as they built a life from scratch, driven by the promise of the "American Dream". Nearly two decades later, their resilience paid off. They not only established themselves but flourished, creating opportunities for my siblings and I that far exceeded their own upbringing. This early exposure to perseverance and hard work became the cornerstone of my approach to life and career.
+                            <br><br>I've channeled this work ethic into my professional endeavors, most notably during my time at V-Armed, a virtual reality combat simulation company, and in various personal projects. While my computer and data science studies often involve long hours in front of screens, I maintain balance through my passion for sports. Basketball is my first love, but I also enjoy football, tennis, volleyball, and soccer. Beyond sports, I also enjoy reading and writing, as they have become vital moments of relaxation, offering a much-needed reset for both mind and body.
+                            <br><br>My early immersion in American culture, combined with the values instilled by my immigrant parents, has given me a unique perspective. It's this blend of experiences that has shaped me into the driven individual I am today. As I continue my journey in tech, I carry with me the lessons of my parents' courage and an unwavering commitment to personal growth and professional excellence.</p>
+                    </li></ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Java, Python, R, C, C++, HTML/CSS, JavaScript, SQL<br></li>
+                        <li><span>Tools</span><br>Visual Studio, VS Code, Microsoft Excel, MySQL, Tableau, Power BI, Unreal Engine Blueprints, Git, Flask, React, Django, TensorBoard, Google Cloud, AWS<br></li>
+                        <li><span>Languages</span><br>English (Fluent), Hebrew (Fluent)<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>V-Armed</span><br>
+                            <b>Development Intern (2024)</b><br>During the summer of 2024, I collaborated with a team of developers at V-Armed's Brooklyn studio to create and enhance combat-simulation virtual reality projects. My role involved leveraging C++ to debug and optimize existing code in Visual Studio, as I developed custom features and enhanced pre-existing ones for improved efficiency and functionality. Additionally, I created and implemented features using Unreal Engine Blueprints, including a customizable 3D text rendering system with adjustable color, spacing, and depth. I also continued to assist in user testing and maintenance as a follow-up for my time here last summer.<br><br>
+                            <b>Summer Intern (2023)</b><br>In the summer of 2023, I served as a summer intern at V-Armed, focusing on the calibration and maintenance of state-of-the-art VR technology. My responsibilities included handling and testing of headsets, sensors, cameras, and miscellaneous accessories to ensure optimal performance for clients such as the NYPD. Additionally, I supported administrative tasks, maintained the large studio space, and assisted with special projects. This experience allowed me to gain familiarity with company operations and contribute to a collaborative work environment.<br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Rutgers University - New Brunswick</span><br>Computer Science, B.S.<br>Data Science, B.S.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<!------------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/fitness.png">
+                <div class="layer">
+                    <h3>JUNO: Fitness App</h3>
+                    <p>Developed JUNO, a cross-platform fitness app using React Native (Expo) and Firebase, featuring a custom navigation system and reusable UI components for an intuitive experience. Implemented secure authentication, real-time Firestore storage, and automated progress resets with Cloud Functions.</p>
+                    <a href="https://github.com/itayakad/juno-master"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/football.png">
+                <div class="layer">
+                    <h3>Fantasy Football Analysis</h3>
+                    <p>A data-driven fantasy football analysis project using SQL and Python to explore over a decade of player performance. It uncovers key trends and predicts future top performers, providing valuable insights and forecasts through statistical analysis and machine learning.</p>
+                    <a href="https://github.com/itayakad/Fantasy-Football-Analysis"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/website.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Yes, this exact website. A responsive personal portfolio designed to showcase projects and experiences. Built with HTML/CSS and JavaScript, the site adapts seamlessly across devices and contains custom features.</p>
+                    <a href="https://github.com/itayakad/Portfolio-Website"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/itayakad?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------contact------------------->
+<div id="contact">
+    <div class="contact-container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact">
+            <div class="social-icons">
+                <a href="mailto:itayakad@gmail.com"><i class="fas fa-paper-plane"></i></a>
+                <a href="tel:+12014681278"><i class="fas fa-phone-square-alt"></i></a>
+                <a href="https://www.linkedin.com/in/itayakad/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/itayakad"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2">Click For Resume</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Itay Akad © 2024 <i class="fa-solid fa-desktop"></i> </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
